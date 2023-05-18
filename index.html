@@ -16,7 +16,7 @@
       <!-- Nav -->
       <nav class="main-nav">
         <img src="/img/logo.png" alt="Microsoft logo" class="logo" />
-        <ul class="main-menu">
+        <ul class="main-menu show">
           <li><a href="#">Office</a></li>
           <li><a href="#">Windows</a></li>
           <li><a href="#">Surface</a></li>
@@ -279,6 +279,14 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", () =>
+          document.querySelector(".main-menu").classList.toggle("show")
+        );
+    </script>
 
     <script
       type="module"
